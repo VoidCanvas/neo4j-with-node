@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/VoidCanvas/neo4j-with-node#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "neo4j": "^1.1.1"
   }
 }
