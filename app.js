@@ -33,7 +33,7 @@ app.post('/data', function (req, res) {
 });
 
 
-// data get route returns the node we created
+// data get route returns the node with name=given parameter
 app.get('/data/:name', function (req, res) {
 	var query="MATCH (n:VoidCanvas {name: {nameParam}}) RETURN n LIMIT 100";
 	var params = {
@@ -47,7 +47,7 @@ app.get('/data/:name', function (req, res) {
 
 });
 
-// data post route to create a node of type "VoidCanvas" and name attribute as "Paul"
+// data post route to create a node of type "VoidCanvas" and name attribute as given parameter
 app.post('/data/:name', function (req, res) {
 	var query="CREATE (n:VoidCanvas {name:{nameParam}}) RETURN n";
 	
